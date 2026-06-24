@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ピーマン紹介サイト</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #333;
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+    color: green;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background-color: #81c784;
+}
+
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+</style>
+</head>
+
+<body>
+
+<h1>ピーマン</h1>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Green_pepper.jpg" alt="ピーマン">
+
+<h2>ピーマンの特徴</h2>
+<p>
+ピーマンはナス科の野菜で、夏に多く収穫されます。
+ビタミンCを豊富に含み、健康によい野菜です。
+比較的育てやすく、家庭菜園でも人気があります。
+</p>
+
+<h2>栽培のポイント</h2>
+<ul>
+    <li>日当たりの良い場所で育てる。</li>
+    <li>水切れに注意して管理する。</li>
+    <li>追肥を定期的に行う。</li>
+</ul>
+
+<h2>基本情報</h2>
+
+<table>
+<tr>
+    <th>種まき時期</th>
+    <th>収穫時期</th>
+    <th>難易度</th>
+</tr>
+<tr>
+    <td>2〜4月</td>
+    <td>6〜10月</td>
+    <td>★★★☆☆</td>
+</tr>
+</table>
+
+<h2>関連サイト</h2>
+
+<button onclick="window.open('https://saijo-ah.esnet.ed.jp/', '_blank')">
+西条農業高校
+</button>
+
+<button onclick="window.open('https://sakata-tsushin.com/oyakudachi/lesson/vegetable/post_17/', '_blank')">
+ピーマンの栽培方法
+</button>
+
+<script>
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+    button.addEventListener("click", function(){
+        this.innerHTML = "開きました！";
+        this.style.backgroundColor = "orange";
+    });
+});
+</script>
+
+</body>
+</html>
